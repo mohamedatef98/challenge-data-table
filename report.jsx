@@ -4,7 +4,10 @@ var createReactClass = require('create-react-class')
 
 var rows = require('./data.json')
 
-var dimensions = []
+var dimensions = [
+  {value: 'date', title: 'Date'},
+  {value: 'host', title: 'Host'}
+]
 
 var reduce = function(row, memo){
 
