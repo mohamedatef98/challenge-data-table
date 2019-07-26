@@ -32,6 +32,7 @@ var calculations = [
 
   //Load Rate (loads/impressions) %, Display Rate (displays/loads) %
   {title: 'Load Rate', value: function(memo) {return memo.loads*1.0/memo.impressions}, template: function(val) {return (val*100).toFixed(1)}},
+  {title: 'Display Rate', value: function(memo) {return memo.displays*1.0/memo.loads}, template: function(val) {return (val*100).toFixed(1)}}
 ]
 
 module.exports = createReactClass({
