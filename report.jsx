@@ -10,14 +10,15 @@ var dimensions = [
 ]
 
 var reduce = function(row, memo){
-
+  var currentImpressions = (memo.impressions || 0)
+  memo.impressions = row.type === 'impression' ? currentImpressions + 1 : currentImpressions
 
   return memo
 }
 
 
 var calculations = [
-
+  {title: 'Impressions', value: function(memo) {return memo.impressions}}
 ]
 
 module.exports = createReactClass({
