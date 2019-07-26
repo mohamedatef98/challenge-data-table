@@ -30,7 +30,7 @@ module.exports = createReactClass({
         dimensions={dimensions}
         reduce={reduce}
         calculations={calculations}
-        activeDimensions={[]}
+        activeDimensions={['Date', 'Host']}
       />
     </div>
     )
