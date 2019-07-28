@@ -26,9 +26,9 @@ var reduce = function(row, memo){
 
 var calculations = [
   //Impressions, Loads, Displays Count
-  {title: 'Impressions', value: function(memo) {return memo.impressions}},
-  {title: 'Loads', value: function(memo) {return memo.loads}},
-  {title: 'Displays', value: function(memo) {return memo.displays}},
+  {title: 'Impressions', value: 'impressions'},
+  {title: 'Loads', value: 'loads'},
+  {title: 'Displays', value: 'displays'},
 
   //Load Rate (loads/impressions) %, Display Rate (displays/loads) %
   {title: 'Load Rate', value: function(memo) {return memo.loads*100.0/memo.impressions}, template: function(val) {return val.toFixed(1)+"%"}},
